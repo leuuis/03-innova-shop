@@ -15,6 +15,9 @@ export const TopMenu = () => {
       </div>
 
       {/* Menu */}
+      {
+        // TODO: To verify behavior when links are clicked since the second click 
+      }
       <div className="hidden sm:block">
         <Link href="category/men" className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 text-sm text-gray-500">Men</Link>
         <Link href="category/women" className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 text-sm text-gray-500">Women</Link>
@@ -26,6 +29,7 @@ export const TopMenu = () => {
         <Link href="/search" className="mx-2">
           <IoSearchOutline className="w-5 h-5" />
         </Link>
+
         <div className="relative">
           <span className="absolute text-xs rounded-full px-1 font-bold top-3 -right-2   bg-blue-700 text-white">3</span>
           <Link href="/cart" className="mx-2">
