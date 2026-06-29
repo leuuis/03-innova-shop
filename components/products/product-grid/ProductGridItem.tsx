@@ -11,17 +11,20 @@ interface Props {
 export const ProductGridItem = ({ product, priority }: Props) => {
     return (
         <div className="rounded-md overflow-hidden fade-in">
-            <Image
-                priority={priority}
-                src={`/products/${product.images[0]}`}
-                alt={product.title}
-                className="w-full object-cover"
-                width={500}
-                height={500}
-            />
+            <Link href={`/product/${product.slug}`}>
+                <Image
+                    priority={priority}
+                    src={`/products/${product.images[0]}`}
+                    alt={product.title}
+                    className="w-full object-cover"
+                    width={500}
+                    height={500}
+                />
+            </Link>
 
             <div className="p-4 flex flex-col">
-                <Link href={`/product/${product.slug}`}>
+                <Link className="hover:text-blue-500"
+                    href={`/product/${product.slug}`}>
                     {product.title}
                 </Link>
                 <span className="font-bold">${product.price}</span>
