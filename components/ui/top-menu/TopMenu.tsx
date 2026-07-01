@@ -22,13 +22,10 @@ export const TopMenu = () => {
       </div>
 
       {/* Menu */}
-      {
-        // TODO: To verify behavior when links are clicked since the second click 
-      }
       <div className="hidden sm:block">
-        <Link href="category/men" className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 text-sm text-gray-500">Men</Link>
-        <Link href="category/women" className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 text-sm text-gray-500">Women</Link>
-        <Link href="category/kid" className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 text-sm text-gray-500">Kids</Link>
+        <Link href="/category/men" className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 text-sm text-gray-500">Men</Link>
+        <Link href="/category/women" className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 text-sm text-gray-500">Women</Link>
+        <Link href="/category/kid" className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 text-sm text-gray-500">Kids</Link>
       </div>
 
       {/* Search, Cart, Menu */}
