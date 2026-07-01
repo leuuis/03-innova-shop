@@ -27,6 +27,7 @@ export const PageNotFound = () => {
                     width={550}
                     height={550}
                     style={{ width: '100%', height: 'auto' }}
+                    priority
                 >
 
                 </Image>

@@ -7,8 +7,8 @@ const products: Product[] = initialData.products;
 export default function Home() {
   return (
     <>
-      <Title title={"Tienda"}
-        subtitle="Todos los productos"
+      <Title title={"Store"}
+        subtitle="All products"
         className="mb-3" />
 
       <ProductGrid products={products} />
